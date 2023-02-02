@@ -1,0 +1,27 @@
+.sertificates {
+    padding: 48px 0 40px;
+    .title {
+        margin-bottom: 31px;
+        span {
+            color: #EF7C00;
+        }
+    }
+     .owl-nav button.owl-next, .owl-nav button.owl-prev{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .owl-theme .owl-dots .owl-dot span {
+        background: none;
+        border: 2px solid #EF7C00;
+    }
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+        background: #EF7C00;
+    }
+    .owl-nav button.owl-next  {
+        right: -60px;
+    }
+    .owl-nav button.owl-prev {
+        left: -60px;
+    }
+}

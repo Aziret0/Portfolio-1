@@ -1,0 +1,99 @@
+.footer {
+    background: rgba(0, 16, 61, 0.06);
+    position: relative;
+    &__hook {
+        width: 68px;
+        height: 68px;
+        position: absolute;
+        right: 48px;
+        bottom: 102px;
+        box-shadow: 0px 4px 32px rgba(0, 16, 61, 0.16);
+        border-radius: 58px;
+        background: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-img {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+    }
+    &__end {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 13px;
+        color: #919399;
+        padding-bottom: 30px;
+    }
+    hr {
+        margin-bottom: 16px;
+    }
+    .networks {
+        &__link {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+    }
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
+        margin-bottom: 10px;
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px;
+        color: #2C2D2E;
+        margin-bottom: 24px;
+    }
+    &__link {
+        gap: 12px;
+        &-list {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            color: #2C2D2E;
+            transition: 0.4s;
+            &:last-of-type {
+                margin-bottom: 90px;
+            }
+            &:hover {
+                cursor: pointer;
+                color: #EF7C00;
+            }
+        }
+    }
+    &__subtitle {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #EF7C00;
+        margin-bottom: 12px;
+        &_gap {
+            margin-top: 24px;
+        }
+    }
+    &__box {
+      height: 50px; 
+      &-phone {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+        color: #2C2D2E;
+        display: inline-block;
+        &_gap {
+            margin-bottom: 8px;
+        }
+      }
+}
+}

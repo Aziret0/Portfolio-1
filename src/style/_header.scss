@@ -1,0 +1,176 @@
+@mixin burgerLine {
+    height: 2px;
+    background: #2C2D2E;
+    position: absolute;
+    left: 0;
+    transform: translateY(-50%);
+}
+.header {
+    box-shadow: 0 4px 32px rgba(0, 16, 61, 0.16);
+    background: #FFFFFF;
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__list {
+            display: flex;
+            gap: 32px;
+            &-item {
+                padding: 28px 0;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: #2C2D2E;
+                transition: 0.4s;
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    right: -16px;
+                    height: 28px;
+                    width: 1px;
+                    background: rgba(0, 16, 61, 0.12);
+                }
+                &:last-child {
+                    &::before {
+                        display: none;
+                    }
+                }
+                &:hover {
+                    color: #EF7C00;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .lang {
+        display: flex;
+        gap: 8px;
+        &__item {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 20px;
+            display: flex;
+            align-items: center;
+            color: #919399;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            &_active {
+                color: #EF7C00;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                right: -4px;
+                height: 23px;
+                width: 1px;
+                background: rgba(0, 16, 61, 0.12);
+            }
+            &:last-child {
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+    .burger-menu {
+        display: none;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        cursor: pointer;
+        &_active {
+            .burger-menu__line {
+                background: transparent;
+                &::before {
+                    top: 0;
+                    transform: translateY(-50%) rotate(-45deg);  
+                }
+                &::after {
+                    bottom: 0;
+                    transform: translateY(-50%) rotate(45deg);  
+                }
+            }
+        }
+        &__line {
+            width: 100%;
+            height: 2px;
+            background: #2C2D2E;
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            &::before {
+                content: '';
+                width: 100%;
+                height: 2px;
+                background: #2C2D2E;
+                position: absolute;
+                left: 0;
+                top: -10px;
+                transform: translateY(-50%);
+                transition: 0.4s;
+            }
+            &::after {
+                content: '';
+                width: 100%;
+                height: 2px;
+                background: #2C2D2E;
+                position: absolute;
+                left: 0;
+                bottom: -10px;
+                transform: translateY(-50%);
+                transition: 0.4s;
+            }
+        }
+    }
+    @media screen and (max-width: 1200px) {
+        .nav {
+            padding: 20px 0;
+            .logo {
+                order: 2;
+            }
+            .burger-menu {
+                display: block;
+                order: 1;
+                &_active {
+                    position: fixed;
+                    left: 30px;
+                    top: 30px;
+                    z-index: 3;
+                }
+            }
+            .lang {
+                order: 3;
+            }
+            &__list {
+                display: none;
+                &_active {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    position: fixed;
+                    left: 0;
+                    top: 0;
+                    z-index: 2;
+                    width: 50%;
+                    height: 100%;
+                    background: #fff;
+                    .nav__list-item {
+                        padding: 15px 0;
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

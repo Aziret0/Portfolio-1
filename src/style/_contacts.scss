@@ -1,0 +1,85 @@
+.contacts {
+    padding: 80px 0 41;
+    background: rgba(0, 16, 61, 0.06);
+    .title {
+        margin-bottom: 32px;
+        padding-top: 40px;
+    }
+    .col-3 {
+        position: relative;
+        &::before {
+            content: '';
+             position: absolute;
+             width: 1px;
+             height: 270px;
+             background: rgba(0, 16, 61, 0.12);
+             right: 5px;
+        }
+        &:last-of-type {
+            &::before {
+                display: none;
+            }
+        }
+    }
+        &__city {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #2C2D2E;
+            margin-bottom: 24px;
+        }
+        &__phone{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 13px;
+            color: #919399;
+            margin-bottom: 8px;
+        }
+        &__mail {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 13px;
+            color: #919399;
+            margin-top: 12px;
+            margin-bottom: 8px;
+        }
+        &__addres {
+            margin: 12px 0 8px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 13px;
+            color: #919399;
+        }
+        &__location {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            color: #2C2D2E;
+            width: 280px;
+            padding-bottom: 44px;
+        }
+        &__box {
+            height: 40px;
+            &-number {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 20px;
+                color: #2C2D2E;
+                display: inline-block;
+            }
+            &-email {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 20px;
+                color: #2C2D2E;
+                display: inline-block;
+            }
+        }
+    }

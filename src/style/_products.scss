@@ -1,0 +1,75 @@
+.products {
+    padding: 88px 0 80px;
+    .title {
+        margin-bottom: 32px;
+        span {
+            color: #EF7C00;
+        } }
+    .products-tabs{
+        &__caption {
+            display: flex;
+            justify-content: center;
+            gap: 44px;
+        }
+        &__link-wrapper {
+            text-align: center;
+        }
+        &__link {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            text-align: center;
+            border: 1px solid #EF7C00;
+            border-radius: 4px;
+            padding: 10px 20px;
+            display: inline-block;
+            color:#EF7C00;
+            margin-top: 48px;
+        }
+        &__content {
+            display: none;
+            &_active {
+                display: block;
+            }
+        }
+        &__btn {
+            padding: 12px 20px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 13px;
+            text-align: center;
+            color: #EF7C00;
+            border: 1px solid rgba(0, 16, 61, 0.12);
+            border-radius: 61px;
+            cursor: pointer;
+            margin-bottom: 48px;
+            &_active {
+                color: #FFFFFF;
+                background: #EF7C00;
+                border: none;
+            }
+
+        }
+
+    }
+    .owl-nav button.owl-next, .owl-nav button.owl-prev{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .owl-theme .owl-dots .owl-dot span {
+        background: none;
+        border: 2px solid #EF7C00;
+    }
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+        background: #EF7C00;
+    }
+    .owl-nav button.owl-next  {
+        right: -60px;
+    }
+    .owl-nav button.owl-prev {
+        left: -60px;
+    }
+}

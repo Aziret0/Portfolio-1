@@ -1,0 +1,28 @@
+.about {
+    padding: 40px 0 56px;
+    .title {
+        margin-bottom: 32px;
+        span {
+            color: #EF7C00;
+        }
+
+    }
+    &__description {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #2C2D2E;
+        margin-bottom: 30px;
+    }
+    &__image {
+        position: relative;
+        &-btn {
+            position: absolute;
+            right: 220px;
+            bottom: 115px;
+            z-index: 2;
+        }
+    }
+}
