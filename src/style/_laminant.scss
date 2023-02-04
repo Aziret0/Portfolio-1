@@ -1,0 +1,61 @@
+.laminant {
+    padding: 56px 0 85px;
+    .owl-carousel .owl-item img {
+        display: block;
+        width: 505px;
+        height: 505px;}
+    &__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+        color: #2C2D2E;
+        margin-bottom: 20px;
+        span {
+            color: #EF7C00;
+        }
+    }
+    &__info {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #2C2D2E;
+        margin-bottom: 24px;
+        width: 665px;
+    }
+    &__description {
+        width: 668px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+        color: #2C2D2E;
+        margin-bottom: 32px;
+    }
+    &__subtitle {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #2C2D2E;
+        margin-bottom: 8px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: -18px;
+            width: 15px;
+            height: 15px;
+            background: url("../../src/image/dot.svg");
+        }
+    }
+    .owl-theme .owl-dots .owl-dot span {
+        background: none;
+        border: 2px solid #EF7C00;
+    }
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+        background: #EF7C00;
+    }
+}

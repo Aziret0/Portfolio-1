@@ -14,4 +14,9 @@ $(document).ready(function(){
         $('.burger-menu').toggleClass('burger-menu_active')
         $('.nav__list').toggleClass('nav__list_active')
       });
+      // laminant
+      $("#laminant-slider").owlCarousel({
+        items: 1,
+        loop: true,
+    });
   });
