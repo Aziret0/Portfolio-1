@@ -15,7 +15,17 @@
 @import './footer';
 @import './laminant';
 @import './ourProducts';
-
+@import './data';
+@import './ext';
+@import './extProducts';
+@import './others';
+@import './ourTeam';
+@import './supply';
+@import './purchase';
+@import './prepress';
+@import './info';
+@import './process';
+@import './door';
 
 * {
     margin: 0;
@@ -46,5 +56,6 @@ a, a:hover {
     text-align: center;
     color: #2C2D2E;
 }
+
 
 

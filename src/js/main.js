@@ -19,4 +19,12 @@ $(document).ready(function(){
         items: 1,
         loop: true,
     });
+      $("#ext-slider").owlCarousel({
+        items: 1,
+        loop: true,
+    });
+      $("#others-slider").owlCarousel({
+        items: 1,
+        loop: true,
+    });
   });

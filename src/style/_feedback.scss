@@ -1,5 +1,9 @@
 .feedback {
     padding-top: 80px;
+    &_laminant {
+        padding-top: 10px;
+        padding-bottom: 50px;
+    }
     &__title {
         font-style: normal;
         font-weight: 600;

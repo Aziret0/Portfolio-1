@@ -1,0 +1,82 @@
+.prepress {
+    padding: 40px 0 84px;
+    .gap {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+        color: #2C2D2E;
+        margin-bottom: 31px;
+        span {
+            color: #EF7C00;
+        }
+    }
+    &__image {
+        width: 319px;
+        height: 349px;
+        background: url(../src/image/team/prepress1.png);
+        margin-bottom: 12px;
+        &_second {
+            background: url(../src/image/team/prepress2.png);
+        }
+    }
+    &__subtitle {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+        color: #2C2D2E;
+        margin-bottom: 6px;
+    }
+    &__description {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 13px;
+        color: #919399;
+        margin-bottom: 16px;
+        width: 310px;
+    }
+    &__number {
+        display: inline-block;
+        width: 319px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #2C2D2E;
+        &_mar {
+            margin-bottom: 8px;
+        }
+    }
+    &__mail {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #2C2D2E;
+        display: inline-block;
+        &_mar {
+            margin-top: 8px;
+        }
+    }
+    &__btn {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF;
+        background: #EF7C00;
+        display: inline-block;
+        padding: 10px 20px;
+        border: 1px solid #EF7C00;
+        border-radius: 4px;
+        margin-top: 70px;
+    }
+}

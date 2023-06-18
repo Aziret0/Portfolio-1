@@ -1,0 +1,69 @@
+.purchase {
+    padding: 40px 0 84px;
+    .gap {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+        color: #2C2D2E;
+        margin-bottom: 31px;
+        span {
+            color: #EF7C00;
+        }
+    }
+    &__image {
+        width: 319px;
+        height: 349px;
+        background: url(../src/image/team/purchase1.png);
+        margin-bottom: 12px;
+        &_second {
+            background: url(../src/image/team/purchase2.png);
+        }
+        &_third {
+            background: url(../src/image/team/purchase3.png);
+        }
+        &_fourth {
+            background: url(../src/image/team/purchase4.png);
+        }
+    }
+    &__subtitle {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+        color: #2C2D2E;
+        margin-bottom: 6px;
+    }
+    &__description {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 13px;
+        color: #919399;
+        margin-bottom: 16px;
+    }
+    &__number {
+        display: inline-block;
+        width: 319px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #2C2D2E;
+        &_mar {
+            margin-bottom: 8px;
+        }
+    }
+    &__mail {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #2C2D2E;
+    }
+}

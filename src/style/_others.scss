@@ -1,4 +1,4 @@
-.laminant {
+.others {
     padding: 56px 0 85px;
     .owl-carousel .owl-item img {
         display: block;
@@ -39,9 +39,9 @@
         font-size: 16px;
         line-height: 24px;
         color: #2C2D2E;
-        margin-bottom: 8px;
-        position: relative;
         margin-left: 17px;
+        margin-bottom: 24px;
+        position: relative;
         &::before {
             content: '';
             position: absolute;

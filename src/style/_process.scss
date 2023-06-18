@@ -1,0 +1,24 @@
+.process {
+    padding: 56px 0 40px;
+    &__description {
+        margin-bottom: 14px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #2C2D2E;
+    }
+    &__btn {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        color: #EF7C00;
+        display: inline-block;
+        padding: 10px 20px;
+        border: 1px solid #EF7C00;
+        border-radius: 4px;
+        margin-top: 18px;
+    }
+} 

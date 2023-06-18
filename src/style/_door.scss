@@ -1,0 +1,51 @@
+.door {
+    padding: 32px 0 165px;
+    background: url('../src/image/home/bg1\ 1.jpg');
+    background-size: cover;
+    &_2 {
+        background: url(../src/image/home/bg2.jpg);
+        background-size: cover;
+    }
+    &_3 {
+        background: url(../src/image/home/bg3.jpg);
+        background-size: cover;
+    }
+    &__title {
+        width: 250px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 13px;
+        color: #2C2D2E;
+        margin-bottom: 6px;
+    }
+    &__subtitle {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+        color: #2C2D2E;
+        margin-bottom: 17px;
+    }
+    &__description {
+        width: 582px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #2C2D2E;
+        margin-bottom: 32px;
+    }
+    &__btn {
+        padding: 10px 20px;
+        display: inline-block;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF;
+        background: #EF7C00;
+        border-radius: 4px;
+    }
+}

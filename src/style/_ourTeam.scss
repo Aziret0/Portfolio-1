@@ -1,0 +1,30 @@
+.ourTeam {
+    background: rgba(0, 16, 61, 0.06);
+    &__title {
+        padding-top: 77px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+        color: #2C2D2E;
+        margin-bottom: 12px;
+    }
+    &__subtitle {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #919399;
+        margin-bottom: 24px;
+        width: 668px;
+    }
+    &__description {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #919399;
+        padding-bottom: 40px;
+        width: 668px;
+    }
+}

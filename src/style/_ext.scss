@@ -1,4 +1,4 @@
-.laminant {
+.ext {
     padding: 56px 0 85px;
     .owl-carousel .owl-item img {
         display: block;
@@ -23,6 +23,9 @@
         color: #2C2D2E;
         margin-bottom: 24px;
         width: 665px;
+        &_mar {
+            margin-bottom: 44px;
+        }
     }
     &__description {
         width: 668px;
@@ -40,8 +43,8 @@
         line-height: 24px;
         color: #2C2D2E;
         margin-bottom: 8px;
-        position: relative;
         margin-left: 17px;
+        position: relative;
         &::before {
             content: '';
             position: absolute;
